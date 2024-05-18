@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { fetchProduct } from "../actions/productActions";
 import Table from "../components/table/Table";
 import Tags from "../components/tags/Tags";
+import { formatSalesData } from "../utils/formatHelper";
 
 function ProductDetails() {
   const dispatch = useDispatch();
@@ -32,7 +33,7 @@ function ProductDetails() {
             <Tags tags={product.tags} />
           </div>
           <div className="retail-table-wrapper wrapper-base">
-            <Table data={product.sales} />
+            <Table data={formatSalesData(product.sales)} />
           </div>
         </div>
       )}

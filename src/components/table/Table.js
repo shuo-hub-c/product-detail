@@ -1,4 +1,5 @@
 import React from "react";
+import { FaChevronDown } from "react-icons/fa";
 import "./Table.css";
 
 function Table({ data }) {
@@ -13,7 +14,9 @@ function Table({ data }) {
       <thead>
         <tr>
           {headers.map((header) => (
-            <th key={header}>{header}</th>
+            <th key={header}>
+              {header} <FaChevronDown className="chevron-down" />
+            </th>
           ))}
         </tr>
       </thead>

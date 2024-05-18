@@ -19,3 +19,9 @@ th {
 td {
   color: grey;
 }
+
+.chevron-down {
+  color: #4e4a4a;
+  vertical-align: middle;
+  width: 10px;
+}
