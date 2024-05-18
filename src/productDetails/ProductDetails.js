@@ -27,8 +27,8 @@ function ProductDetails() {
                 alt={product.brand}
                 className="product-image"
               />
-              <h2 className="product-title">{product.title} </h2>
-              <p className="product-subtitle"> {product.subtitle} </p>
+              <h2 className="product-title">{product.title}</h2>
+              <p className="product-subtitle">{product.subtitle}</p>
             </div>
             <Tags tags={product.tags} />
           </div>

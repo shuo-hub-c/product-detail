@@ -1,5 +1,6 @@
 import React from "react";
 import { FaChevronDown } from "react-icons/fa";
+import { formatHeader } from "../../utils/formatHelper";
 import "./Table.css";
 
 function Table({ data }) {
@@ -15,7 +16,7 @@ function Table({ data }) {
         <tr>
           {headers.map((header) => (
             <th key={header}>
-              {header} <FaChevronDown className="chevron-down" />
+              {formatHeader(header)} <FaChevronDown className="chevron-down" />
             </th>
           ))}
         </tr>
