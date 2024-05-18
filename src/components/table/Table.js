@@ -1,5 +1,5 @@
-import React from 'react';
-import './Table.css';
+import React from "react";
+import "./Table.css";
 
 function Table({ data }) {
   if (!data || data.length === 0) {
