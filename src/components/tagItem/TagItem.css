@@ -1,0 +1,9 @@
+.tag-item-wrapper {
+    border: 1px solid #d7d4d4;
+    border-radius: 5px;
+    color: #4e4a4a;
+    margin: 10px;
+    white-space: nowrap;
+    padding: 4px 15px;
+    font-weight: 500;
+}
